@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview Preparation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="app">
+
+    <div class="page-header">
+        <span onclick="goHome()">←</span>
+        <h2>Interview Preparation</h2>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('hr')">HR Questions</button>
+        <button class="tab" onclick="showTab('tech')">Technical</button>
+        <button class="tab" onclick="showTab('tips')">Tips</button>
+    </div>
+
+    <!-- HR -->
+    <div id="hr" class="tab-content active">
+        <div class="accordion">Tell me about yourself</div>
+        <div class="accordion">What are your strengths and weaknesses?</div>
+        <div class="accordion">Where do you see yourself in 5 years?</div>
+    </div>
+
+    <!-- Technical -->
+    <div id="tech" class="tab-content">
+        <div class="accordion">What is OOP?</div>
+        <div class="accordion">Difference between Stack and Queue</div>
+        <div class="accordion">What is a database index?</div>
+    </div>
+
+    <!-- Tips -->
+    <div id="tips" class="tab-content">
+        <div class="tip-card gradient">
+            <h3>Interview Tip</h3>
+            <p>Always research the company before the interview.</p>
+        </div>
+
+        <div class="tip-card">
+            <h3>Body Language Matters</h3>
+            <p>Maintain eye contact and sit upright.</p>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-item" onclick="goHome()">Home</div>
+        <div class="nav-item active">Practice</div>
+        <div class="nav-item">Progress</div>
+        <div class="nav-item">Profile</div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
 
